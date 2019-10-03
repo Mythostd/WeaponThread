@@ -25,7 +25,7 @@ namespace WeaponThread
     {
         WeaponId = "Gatling", // name of weapon in terminal
         AmmoMagazineId = "Blank",
-        Block = AimControl(trackTargets: true, turretAttached: true, turretController: true, rotateRate: 0.01f, elevateRate: 0.01f, offset: Vector(x: 0, y: 0, z: 0), fixedOffset: false, debug: false),
+        Block = AimControl(trackTargets: true, turretAttached: true, turretController: true, rotateRate: 0.01f, elevateRate: 0.01f, offset: Vector(x: 0, y: 0, z: 0), fixedOffset: false, debug: true),
         DeviateShotAngle = 0f,
         AimingTolerance = 2f, // 0 - 180 firing angle
         EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
