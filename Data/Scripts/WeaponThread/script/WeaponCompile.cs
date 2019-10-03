@@ -22,7 +22,7 @@ namespace WeaponThread
             return weaponDefinitions;
         }
 
-        internal Session.ParticleOptions Options(bool loop, bool restart, float distance, float duration, float scale)
+        internal Session.ParticleOptions Options(bool loop, bool restart, float distance, float duration, float scale, float hitPlayChance = 1f)
         {
             return new Session.ParticleOptions
             {
@@ -31,6 +31,7 @@ namespace WeaponThread
                 MaxDistance = distance,
                 MaxDuration = duration,
                 Scale = scale, 
+                HitPlayChance = hitPlayChance,
             };
         }
 

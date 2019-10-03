@@ -437,6 +437,7 @@ namespace WeaponThread
             [ProtoMember(2)] internal Vector4 Color;
             [ProtoMember(3)] internal Vector3D Offset;
             [ProtoMember(4)] internal ParticleOptions Extras;
+            [ProtoMember(5)] internal bool ApplyToShield;
         }
 
         [ProtoContract]
@@ -447,6 +448,8 @@ namespace WeaponThread
             [ProtoMember(3)] internal float MaxDuration;
             [ProtoMember(4)] internal bool Loop;
             [ProtoMember(5)] internal bool Restart;
+            [ProtoMember(6)] internal float HitPlayChance;
+
         }
 
         [ProtoContract]
@@ -516,6 +519,8 @@ namespace WeaponThread
         {
             [ProtoMember(1)] internal string TravelSound;
             [ProtoMember(2)] internal string HitSound;
+            [ProtoMember(3)] internal float HitPlayChance;
+            [ProtoMember(4)] internal bool HitPlayShield;
         }
 
         [ProtoContract]
