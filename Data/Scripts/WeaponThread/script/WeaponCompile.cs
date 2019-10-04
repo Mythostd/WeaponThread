@@ -30,7 +30,7 @@ namespace WeaponThread
                 Restart = restart,
                 MaxDistance = distance,
                 MaxDuration = duration,
-                Scale = scale, 
+                Scale = scale,
                 HitPlayChance = hitPlayChance,
             };
         }
@@ -128,9 +128,9 @@ namespace WeaponThread
             return new Session.TracerBaseDefinition { Enable = enable, Length = length, Width = width, Color = color};
         }
 
-        internal Session.AimControlDefinition AimControl(bool trackTargets, bool turretAttached, bool turretController, float rotateRate, float elevateRate, Vector3D offset, bool fixedOffset, bool debug)
+        internal Session.AimControlDefinition AimControl(bool trackTargets, bool turretAttached, bool turretController, float rotateRate, float elevateRate, int minAzimuth, int maxAzimuth, int minElevation, int maxElevation, Vector3D offset, bool fixedOffset, bool debug)
         {
-            return new Session.AimControlDefinition { TrackTargets = trackTargets, TurretAttached = turretAttached, TurretController = turretController, RotateRate = rotateRate, ElevateRate = elevateRate, Offset = offset, FixedOffset = fixedOffset, Debug = debug};
+            return new Session.AimControlDefinition { TrackTargets = trackTargets, TurretAttached = turretAttached, TurretController = turretController, RotateRate = rotateRate, ElevateRate = elevateRate, Offset = offset, Debug = debug, MinAzimuth = minAzimuth, MaxAzimuth = maxAzimuth, MinElevation = minElevation, MaxElevation = maxElevation, FixedOffset = fixedOffset};
         }
 
         internal Session.UiDefinition Display(bool rateOfFire, bool damageModifier, bool toggleGuidance, bool enableOverload)
@@ -204,7 +204,7 @@ namespace WeaponThread
                 CycleEmissivesParts = CycleEmissiveParts,
                 LeavePreviousOn = LeavePreviousOn,
                 EmissivePartNames = EmissivePartNames,
-                IntensityRange = new []{ IntensityFrom, IntensityTo }
+                IntensityRange = new[]{ IntensityFrom, IntensityTo }
             };
         }
 
