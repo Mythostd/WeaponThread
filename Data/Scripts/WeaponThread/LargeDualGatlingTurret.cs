@@ -13,21 +13,21 @@ namespace WeaponThread
 {   // Don't edit above this line
     partial class Weapons
     {
-        WeaponDefinition LargeGatlingTurret_KL => new WeaponDefinition
+        WeaponDefinition DualLargeGatlingTurret_KL => new WeaponDefinition
         {
             Assignments = new ModelAssignments
             {
                 MountPoints = new[]
                 {
-                    MountPoint(subTypeId: "LargeGatlingTurret_KL", aimPartId:"GatlingBarrel", muzzlePartId: "GatlingBarrel", azimuthPartId: "MissileTurretBase1", elevationPartId: "MissileTurretBarrels"),
+                    MountPoint(subTypeId: "DualLargeGatlingTurret_KL", aimPartId:"GatlingBarrel", muzzlePartId: "GatlingBarrel", azimuthPartId: "MissileTurretBase1", elevationPartId: "MissileTurretBarrels"),
                 },
                 Barrels = Names("muzzle_projectile_001", "muzzle_projectile_002", "muzzle_projectile_003", "muzzle_projectile_004", "muzzle_projectile_005", "muzzle_projectile_006")
             },
             HardPoint = new HardPointDefinition
             {
-                WeaponId = "LargeGatlingTurret_KL", // name of weapon in terminal
+                WeaponId = "DualLargeGatlingTurret_KL", // name of weapon in terminal
                 AmmoMagazineId = "Blank",
-                Block = AimControl(trackTargets: true, turretAttached: true, turretController: true, rotateRate: 0.02f, elevateRate: 0.02f, minAzimuth: -180, maxAzimuth: 180, minElevation: -20, maxElevation: 80, offset: Vector(x: 0, y: .12, z: 0), fixedOffset: false, debug: true),
+                Block = AimControl(trackTargets: true, turretAttached: true, turretController: true, rotateRate: 0.02f, elevateRate: 0.02f, minAzimuth: -180, maxAzimuth: 180, minElevation: -20, maxElevation: 80, offset: Vector(x: 0, y: -.12, z: 0), fixedOffset: false, debug: true),
                 DeviateShotAngle = 0.4f,
                 AimingTolerance = .5f, // 0 - 180 firing angle
                 EnergyCost = 0.00000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel

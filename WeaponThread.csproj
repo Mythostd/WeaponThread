@@ -110,6 +110,7 @@
     <None Include="Models\Weapons\Torpedo_Test.mwm" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Scripts\WeaponThread\LargeDualGatlingTurret.cs" />
     <Compile Include="Data\Scripts\WeaponThread\LargeGatlingTurret.cs" />
     <Compile Include="Data\Scripts\WeaponThread\MasterConfig.cs" />
     <Compile Include="Data\Scripts\WeaponThread\script\Slave.cs" />
