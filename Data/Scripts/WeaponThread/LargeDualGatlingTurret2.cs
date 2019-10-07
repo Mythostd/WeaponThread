@@ -27,7 +27,7 @@ namespace WeaponThread
             {
                 WeaponId = "Dual Gattling Turret 2", // name of weapon in terminal
                 AmmoMagazineId = "Blank",
-                Block = AimControl(trackTargets: true, turretAttached: true, turretController: true, rotateRate: 0.02f, elevateRate: 0.02f, minAzimuth: 2, maxAzimuth: 180, minElevation: -20, maxElevation: 80, offset: Vector(x: 0, y: -.12, z: 0), fixedOffset: false, debug: true),
+                Block = AimControl(trackTargets: true, turretAttached: true, turretController: true, primaryTracking: false, rotateRate: 0.02f, elevateRate: 0.02f, minAzimuth: -30, maxAzimuth: 180, minElevation: -30, maxElevation: 80, offset: Vector(x: 0, y: .12, z: 0), fixedOffset: false, debug: false),
                 DeviateShotAngle = 0.4f,
                 AimingTolerance = .5f, // 0 - 180 firing angle
                 EnergyCost = 0.00000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
