@@ -9,7 +9,7 @@
             // Enable your config files using the follow syntax, don't include the ".cs" extension:
             // ConfigFiles(Your1stConfigFile, Your2ndConfigFile, Your3rdConfigFile);
 
-            ConfigFiles(LargeGatlingTurret_KL, DualLargeGatlingTurret_KL); //SmallGatlingGun LargeGatlingTurret
+            ConfigFiles(LargeGatlingTurret_KL, DualLargeGatlingTurret_KL_Turret1, DualLargeGatlingTurret_KL_Turret2); //SmallGatlingGun LargeGatlingTurret
         }
     }
 }
