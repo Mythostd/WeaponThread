@@ -142,6 +142,7 @@ namespace WeaponThread
             [ProtoMember(11)] internal int MaxElevation;
             [ProtoMember(12)] internal int MinElevation;
             [ProtoMember(13)] internal bool PrimaryTracking;
+            [ProtoMember(14)] internal float InventorySize;
         }
 
         [ProtoContract]

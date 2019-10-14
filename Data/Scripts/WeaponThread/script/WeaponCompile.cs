@@ -128,9 +128,9 @@ namespace WeaponThread
             return new Session.TracerBaseDefinition { Enable = enable, Length = length, Width = width, Color = color};
         }
 
-        internal Session.AimControlDefinition AimControl(bool trackTargets, bool turretAttached, bool turretController, bool primaryTracking, float rotateRate, float elevateRate, int minAzimuth, int maxAzimuth, int minElevation, int maxElevation, Vector3D offset, bool fixedOffset, bool debug)
+        internal Session.AimControlDefinition AimControl(bool trackTargets, bool turretAttached, bool turretController, bool primaryTracking, float rotateRate, float elevateRate, int minAzimuth, int maxAzimuth, int minElevation, int maxElevation, Vector3D offset, bool fixedOffset, float inventorySize, bool debug)
         {
-            return new Session.AimControlDefinition { TrackTargets = trackTargets, TurretAttached = turretAttached, TurretController = turretController, RotateRate = rotateRate, ElevateRate = elevateRate, Offset = offset, Debug = debug, MinAzimuth = minAzimuth, MaxAzimuth = maxAzimuth, MinElevation = minElevation, MaxElevation = maxElevation, FixedOffset = fixedOffset, PrimaryTracking = primaryTracking };
+            return new Session.AimControlDefinition { TrackTargets = trackTargets, TurretAttached = turretAttached, TurretController = turretController, RotateRate = rotateRate, ElevateRate = elevateRate, Offset = offset, Debug = debug, MinAzimuth = minAzimuth, MaxAzimuth = maxAzimuth, MinElevation = minElevation, MaxElevation = maxElevation, FixedOffset = fixedOffset, InventorySize = inventorySize, PrimaryTracking = primaryTracking };
         }
 
         internal Session.UiDefinition Display(bool rateOfFire, bool damageModifier, bool toggleGuidance, bool enableOverload)

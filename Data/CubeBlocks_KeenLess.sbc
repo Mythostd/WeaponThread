@@ -3,10 +3,10 @@
   <CubeBlocks>
     
 
-    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition"> <!--LargeGatlingTurret  Done-->
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition"> <!--LargeGatlingTurret  Done-->
 		
 		  <Id>
-			<TypeId>UpgradeModule</TypeId>
+			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>LargeGatlingTurret_KL</SubtypeId>
 		  </Id>
 		  <DisplayName>Gatling non Keen</DisplayName>
@@ -58,7 +58,12 @@
       <BuildTimeSeconds>30</BuildTimeSeconds>
       <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <WeaponDefinitionId Subtype="LargeGatlingTurret" />
-      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <InventoryMaxVolume>0.600</InventoryMaxVolume>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
@@ -82,10 +87,10 @@
 		  
     </Definition>
 
-    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition"> <!--LargeGatlingTurret  Done-->
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition"> <!--LargeGatlingTurret  Done-->
 		
 		  <Id>
-			<TypeId>UpgradeModule</TypeId>
+			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>DualLargeGatlingTurret_KL</SubtypeId>
 		  </Id>
 		  <DisplayName>DualGatling non Keen</DisplayName>
@@ -137,7 +142,12 @@
       <BuildTimeSeconds>30</BuildTimeSeconds>
       <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <WeaponDefinitionId Subtype="LargeGatlingTurret_KL" />
-      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <InventoryMaxVolume>0.600</InventoryMaxVolume>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <ResourceSinkGroup>Defense</ResourceSinkGroup>

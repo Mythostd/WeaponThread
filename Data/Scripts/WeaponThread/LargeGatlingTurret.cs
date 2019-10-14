@@ -26,8 +26,8 @@ namespace WeaponThread
             HardPoint = new HardPointDefinition
             {
                 WeaponId = "LargeGatlingTurret_KL", // name of weapon in terminal
-                AmmoMagazineId = "Blank",
-                Block = AimControl(trackTargets: true, turretAttached: true, turretController: true, primaryTracking: true, rotateRate: 0.02f, elevateRate: 0.02f, minAzimuth: -180, maxAzimuth: 180, minElevation: -20, maxElevation: 80, offset: Vector(x: 0, y: .12, z: 0), fixedOffset: false, debug: true),
+                AmmoMagazineId = "NATO_25x184mm",
+                Block = AimControl(trackTargets: true, turretAttached: true, turretController: true, primaryTracking: true, rotateRate: 0.02f, elevateRate: 0.02f, minAzimuth: -180, maxAzimuth: 180, minElevation: -20, maxElevation: 80, offset: Vector(x: 0, y: .12, z: 0), fixedOffset: false, inventorySize: 0.34f, debug: false),
                 DeviateShotAngle = 0.4f,
                 AimingTolerance = .5f, // 0 - 180 firing angle
                 EnergyCost = 0.00000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
